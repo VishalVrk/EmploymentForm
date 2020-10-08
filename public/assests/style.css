@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.heading-viewport{
+    background-color: #ffffff;
+    border-left: 5px solid #004d40;
+    border-radius: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.inner-view{
+    margin: 2em;
+    padding: 3em;
+}
+    
+
+.logo{
+    padding-left: 2em;
+}
+
+form{
+    background-color: #ffffff;
+    border-left: 5px solid #004d40;
+    border-radius: 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.viewport{
+    margin-top: 1em;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-bottom: 6em;
+}
+
+.postion{
+    padding-top: 2em;
+    color: black;
+}
+
+label{
+    color: #000000;
+}
+
+span{
+    color: #000000;
+}
+
+.employeeName{
+    padding-top: 2em;
+    color: black;
+}
+
+.address{
+    padding-top: 2em;
+    color: black;
+}
+
+.contact{
+    padding-top: 2em;
+    color: black;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #004d40;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #4db6ac;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #4db6ac;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 300px;
+    margin-top: 4em;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+   h4{
+       font-size: 26px;
+   }
+   .inner-view{
+    margin: 2em;
+    padding: 1em;
+}
+
+.logo a{
+    font-size: 18px;
+}
+
+.viewport{
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+  }

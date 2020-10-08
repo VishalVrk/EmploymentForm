@@ -6,16 +6,33 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>materialize</title>
+    <link rel="stylesheet" href="../public/assests/style.css">
+    <title>River Valley HealthCare | Non-Discrmination Policy</title>
 
 </head>
 <body> 
+  <nav>
+    <div class="nav-wrapper teal darken-4">
+      <div class="logo">
+        <a href="#" class="brand-logo">River Valley HealthCare</a>
+      </div>
+    </div>
+  </nav>
 <div class="container">
+  <div class="heading-viewport">
+    <div class="inner-view">
+      <h4 >Non-Discrmination Policy</h4>
+    <p >River Valley HealthCare is committed to the principle of equal opportunity in employment. We do not discriminate on the basis of sex, race, color, creed, national origin, age, religion, sexual orientation, gender identity, gender expression, veteran status, or disability in admission to, access to, treatment in, or employment in its programs and activities.</p>
+    <br>
+    </div>
+  
+</div>
 <form id="employement-form" action="" class="col l15 s3">
-  <h5 class="center">Non-Discrmination Policy</h5>
-  <p class="center">River Valley HealthCare is committed to the principle of equal opportunity in employment. We do not discriminate on the basis of sex, race, color, creed, national origin, age, religion, sexual orientation, gender identity, gender expression, veteran status, or disability in admission to, access to, treatment in, or employment in its programs and activities.</p>
-  <br>
-  <p>Position(s) Applied for</p> 
+  
+  <div class="viewport">
+    <div class="postion">
+  <h5>Position(s) Applied for</h5> 
+  <br/>
   <p>
     <label>
       <input type="checkbox" id="responsibleperson">
@@ -53,7 +70,11 @@
     </label>
   </p>
   <br>
-  <h5 class="center">Name</h5>
+</div>
+
+<div class="employeeName">
+  <h5>Name</h5>
+  <br/>
   <div class="input-field col l5 s1">
     <input type="text" id="firstname">
     <label for="firstname">First Name</label>
@@ -69,31 +90,37 @@
     <label for="lastname">Last Name</label>
   </div>
   <br>
-<!-- address -->
-<h5 class="center">Address</h5>
-<div class="input-field col l5 s1">
-  <input type="text" class="" id="street">
-  <label for="street">Street</label>
 </div>
-
-<div class="input-field col l5 s1">
- <input type="text" class="" id="state">
- <label for="state">State</label>
+<div class="address">
+  <!-- address -->
+  <h5>Address</h5>
+  <br/>
+  <div class="input-field col l5 s1">
+    <input type="text" class="" id="street">
+    <label for="street">Street</label>
+  </div>
+  
+  <div class="input-field col l5 s1">
+    <input type="text" class="" id="state">
+    <label for="state">State</label>
+  </div>
+  
+  <div class="input-field col l5 s1">
+    <input type="text" class="" id="city">
+    <label for="city">City</label>
+  </div>
+  
+  <div class="input-field col l5 s1">
+    <input type="number" class="" id="pin">
+    <label for="pin">Pin</label>
+  </di>
+  <br>
 </div>
-
-<div class="input-field col l5 s1">
- <input type="text" class="" id="city">
- <label for="city">City</label>
-</div>
-
-<div class="input-field col l5 s1">
-  <input type="number" class="" id="pin">
-  <label for="pin">Pin</label>
-</di>
-<br>
-
+  
  <!-- contact -->
- <h5 class="center">Contact</h5>
+ <div class="contact">
+ <h5>Contact</h5>
+ <br/>
  <div class="input-field col l5 s1">
    <input type="number" id="phonenumber">
    <label for="phonenumber">Phonenumber</label>
@@ -111,73 +138,84 @@
   <label for="securitynumer">Social Seccurity Number</label>
 </div>
 <br>
+</div>
+
 <!-- citizenship -->
-<h5 class="center">Citizenship</h5>
-<p>Are you a Citizen of America</p>
-<p>
-  <label>
-    <input type="radio" name="citizenship" id="citizenship" value="yes">
-    <span>Yes</span>
-  </label>
-</p>
-<p>
-  <label>
-   <input data-target="modal1" class="modal-trigger" type="radio" name="citizenship" id="citizenship" value="no" >
-   <span >No</span>
-  </label>
-</p>   
-<br>
+<div class="citizenship">
+  <h5 >Citizenship</h5>
+  <p>Are you a Citizen of America</p>
+  <p>
+    <label>
+      <input type="radio" name="citizenship" id="citizenship" value="yes">
+      <span>Yes</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input data-target="modal1" class="modal-trigger" type="radio" name="citizenship" id="citizenship" value="no" >
+      <span >No</span>
+    </label>
+  </p>   
+  <br>
+</div>
 
 <!-- workpermit -->
-<h5 class="center">Workpermit</h5>
-<p>If You Are Under 18 Can You Provide Workpermit</p>
-<p>
-  <label>
-    <input type="radio" name="workpermit" id="workpermit" value="yes">
-    <span>Yes</span>
-  </label>
-</p>
-<p>
-  <label>
-    <input type="radio" name="workpermit" id="workpermit" value="no">
-    <span>No</span>
-  </label>
-</p>  
-<br>
+<div class="workpermit">
+  <h5 >Workpermit</h5>
+  <p>If You Are Under 18 Can You Provide Workpermit</p>
+  <p>
+    <label>
+      <input type="radio" name="workpermit" id="workpermit" value="yes">
+      <span>Yes</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="radio" name="workpermit" id="workpermit" value="no">
+      <span>No</span>
+    </label>
+  </p>  
+  <br>
+</div>
+
 
  <!--application  -->
- <h5 class="center">Company</h5>
- <p>Have You Ever Filed Application Here</p>
-<p>
-  <label>
-    <input type="radio" name="application" id="application" class="modal-trigger" data-target="modal2" value="yes">
-    <span>Yes</span>
-  </label>
-</p>
-<p>
-  <label>
-    <input type="radio" name="application"id="application" value="no">
-    <span>No</span>
-  </label>
-</p>  
-<br>
-<p>Have You Ever Worked For This Company</p> 
-<p>
-  <label>
-    <input type="radio" name="worked" id="companywork"class="modal-trigger" data-target="modal2" value="yes">
-    <span>Yes</span>
-  </label>
-</p>
-<p>
-  <label>
-    <input type="radio" name="worked"id="companywork" value="no">
-    <span>No</span>
-  </label>
-</p>  
-<br>
+ <div class="company">
+  <h5 >Company</h5>
+  <p>Have You Ever Filed Application Here</p>
+ <p>
+   <label>
+     <input type="radio" name="application" id="application" class="modal-trigger" data-target="modal2" value="yes">
+     <span>Yes</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input type="radio" name="application"id="application" value="no">
+     <span>No</span>
+   </label>
+ </p>  
+ <br>
+ <p>Have You Ever Worked For This Company</p> 
+ <p>
+   <label>
+     <input type="radio" name="worked" id="companywork"class="modal-trigger" data-target="modal2" value="yes">
+     <span>Yes</span>
+   </label>
+ </p>
+ <p>
+   <label>
+     <input type="radio" name="worked"id="companywork" value="no">
+     <span>No</span>
+   </label>
+ </p>  
+ <br>
+ </div>
+
 
 <!-- employment desired -->
-<h5 class="center">Work Timing</h5>
+<div class="workTiming">
+<h5 >Work Timing</h5>
 <p>Employment Desired</p> 
 <p>
   <label>
@@ -218,17 +256,20 @@
   </label>
 </p>  
  <br>
+</div>
+
 
  <!--  shifts available to work-->
- <h5 class="center">Shifts Available To work </h5>
-<p>Weekdays</p>
-<p>
-  <label>
-    <input type="checkbox" name="shifts" id="timing1">
-    <span>7:00 A.M. to 3:00 P.M.</span>
-  </label>
-</p>
-<p>
+ <div class="shifts">
+   <h5 >Shifts Available To work </h5>
+   <p>Weekdays</p>
+   <p>
+     <label>
+       <input type="checkbox" name="shifts" id="timing1">
+       <span>7:00 A.M. to 3:00 P.M.</span>
+      </label>
+    </p>
+    <p>
   <label>
     <input type="checkbox" name="shifts" id="timing2">
     <span> 3:00 P.M. to 11:00 P.M.</span>
@@ -264,12 +305,14 @@
 <div class="input-field col l5 s1">
   <input type="text" class="" id="others">
   <label for="others">Others</label>
- </div>
- <br>
+</div>
+<br>
+</div>
 
 <!-- requirements -->
-<h5 class="center">Requirements </h5>
-<p>Can you Travel Locally If a Job Requires</p>
+<div class="requirements">
+  <h5 >Requirements </h5>
+  <p>Can you Travel Locally If a Job Requires</p>
 <p>
   <label>
     <input type="radio" name="travel" id="travel" value="yes">
@@ -311,49 +354,55 @@
   </label>
 </p>
 <br>
+</div>
 
 <!-- education -->
-<h5 class="center">Education</h5>
-<div class="input-field">
+<div class="education">
+  <h5 >Education</h5>
+  <div class="input-field">
 <input type="text" id="typeofschool" name="typeofschool">
-<label for="typeofschool">(1)Type of School</label>
+<label for="typeofschool">(1) Type of School</label>
 </div>
 <div class="input-field">
-<input type="text" id="nameofschool" name="nameofschool">
-<label for="nameofschool">(1)Name of School"</label>
+  <input type="text" id="nameofschool" name="nameofschool">
+  <label for="nameofschool">(1) Name of School"</label>
 </div>
 <div class="input-field">
 <input type="text" id="location" name="location">
-<label for="location">(1)location(complete mailing address)</label>
+<label for="location">(1) location(complete mailing address)</label>
 </div>
 <div class="input-field">
 <input type="text" id="noofyearscompletd" name="noofyearscompletd">
-<label for="noofyearscompleted">(1)No.of Years Completd</label>
+<label for="noofyearscompleted">(1) No.of Years Completd</label>
 </div>
 <div class="input-field">
-<input type="text" id="majordegree" name="majordegree">
-<label for="majordegree">(1)Major Degree</label>
+  <input type="text" id="majordegree" name="majordegree">
+  <label for="majordegree">(1) Major Degree</label>
 </div>
 <br>
+</div>
 
 <!-- computer skills -->
-<h5 class="center">Computer Skills</h5>
+<div class="computerskills">
+  <h5 >Computer Skills</h5>
 <div class="input-field">
   <input type="text" id="computerskills" name="computerskills">
-  <label for="computerskills">(1)Computer Skills</label>
+  <label for="computerskills">(1) Computer Skills</label>
   </div>
   <br>
+</div>
+
 
 <!-- other skills -->
-<h5 class="center">Other Skills</h5>
+<h5 >Other Skills</h5>
 <div class="input-field">
   <input type="text" id="otherskills" name="otherskills">
-  <label for="otherskills">(1)Other Skills</label>
+  <label for="otherskills">(1) Other Skills</label>
   </div>
   <br>
 
 <!-- work experience 1 -->
-<h5 class="center">Work Experience1</h5>
+<h5 >Work Experience 1</h5>
 <div class="input-field">
 <label for="employee">Name of the current /recent Employee</label>
 <input type="text" id="employee" name="employee">
@@ -391,7 +440,7 @@
 <br>
 
 <!-- work experience2 -->
-<h5 class="center">Work Experience2</h5>
+<h5 >Work Experience 2</h5>
 <div class="input-field">
 <label for="employee2">Name of the current /recent Employee</label>
 <input type="text" id="employee2" name="employee2">
@@ -429,7 +478,7 @@
 <br>
 
 <!-- work experience3 -->
-<h5 class="center">Work Experience3</h5>
+<h5 >Work Experience 3</h5>
 <div class="input-field">
 <label for="employee3">Name of the current /recent Employee</label>
 <input type="text" id="employee3" name="employee3">
@@ -467,37 +516,37 @@
 <br>
 
 <!-- references -->
-<h5 class="center">References</h5>
+<h5 >References</h5>
 <div class="input-field">
-<label for="referencename">(1)Name</label>
+<label for="referencename">(1) Name</label>
 <input type="text" id="referencename" name="referencename">
 </div>
 
 <div class="input-field">
-<label for="referenceposition">(1)Position</label>
+<label for="referenceposition">(1) Position</label>
 <input type="text" id="referenceposition" name="referenceposition" >
 </div>
 
 <div class="input-field">
-<label for="referencecompany">(1)Company</label>
+<label for="referencecompany">(1) Company</label>
 <input type="text" id="referencecompany" name="referencecompany" >
 </div>
 
 <div class="input-field">
-<label for="referenceaddress">(1)Address</label>
+<label for="referenceaddress">(1) Address</label>
 <input type="text" id="referenceaddress" name="referenceaddress" >
 </div>
 
 <div class="input-field">
-<label for="referencephone">(1)phonenumber</label>
+<label for="referencephone">(1) Phone Number</label>
 <input type="text" id="referencephone" name="referencephone" >
 </div>
 <br>
 
 <!-- affirmative action survey -->
-<h5 class="center">Affirmative Action Survey</h5>
-<p class="center">(Government agencies require periodic reports on the sex, ethnicity, disability, and veteran status of applicants. Submission of information about a disability is voluntary. This data is for analysis and affirmative action only.)</p>
-<p>1.Sex</p>
+<h5 >Affirmative Action Survey</h5>
+<p >(Government agencies require periodic reports on the sex, ethnicity, disability, and veteran status of applicants. Submission of information about a disability is voluntary. This data is for analysis and affirmative action only.)</p>
+<p>1. Sex</p>
 <p>
   <label>
     <input type="radio" name="sex" id="sex">
@@ -511,7 +560,7 @@
   </label>
 </p>
 <br>
-<p>2.Race</p>
+<p>2. Race</p>
 <p>
   <label>
     <input type="radio" name="race" id="race">
@@ -543,7 +592,7 @@
   </label>
 </p>
 <br>
-<p>3.Disabled</p>
+<p>3. Disabled</p>
 <p>
   <label>
     <input type="radio" name="disabled" id="disabled">
@@ -563,13 +612,13 @@
   </label>
 </p>
 <br>
-<button class="btn yellow darken-2">Submit</button>
+<button class="btn teal darken-4">Submit</button>
 </form>
 </div>
 <br>
 
 <!-- signature -->
-
+</div>
 
 
 

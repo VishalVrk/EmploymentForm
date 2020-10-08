@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Data Table</title>
+    <title>River Valley HealthCare</title>
     <!-- DataTables -->
     <link
       href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"
@@ -21,75 +21,59 @@
       type="text/css"
     />
     <!-- Bootstrap Css -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../public/assests/style.css">
   </head>
   <style>
     #layout-wrapper {
       margin: 5em;
     }
   </style>
-  <body data-sidebar="dark">
-    <!-- Begin page -->
-    <div id="layout-wrapper">
-      <!-- ============================================================== -->
-      <!-- Start right Content here -->
-      <!-- ============================================================== -->
-      <div class="main-content">
-        <div class="page-content">
-          <div class="container-fluid">
-            <!-- start page title -->
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">River Valley - Employment Form</h4>
-                    <table
-                      id="datatable"
-                      class="table table-bordered dt-responsive nowrap"
-                      style="
-                        border-collapse: collapse;
-                        border-spacing: 0;
-                        width: 100%;
-                      "
-                    >
-                      <thead>
-                        <tr style="background-color: #90caf9; color: aliceblue">
-                          <th>Name</th>
-                          <th>Email</th>
-                          <th>Phone Number</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <!-- <td>Hi</td>
-                          <td>Hello</td>
-                          <td class="btn btn-primary">
-                            <a href="#" style="color: white">Link</a>
-                          </td> -->
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <!-- end col -->
-            </div>
-            <!-- end row -->
-          </div>
-          <!-- container-fluid -->
+  <body>
+    <nav>
+      <div class="nav-wrapper teal darken-4">
+        <div class="logo">
+          <a href="#" class="brand-logo">
+            River Valley HealthCare</a>
         </div>
-        <!-- End Page-content -->
       </div>
-      <!-- end main content-->
+    </nav>
+    <div class="row">
+    <div class="sidebar col s2">
+      <a class="active" href="#home">Employee Registration Form</a>
     </div>
-    <!-- END layout-wrapper -->
-    <!-- Right bar overlay-->
-    <div class="rightbar-overlay"></div>
+    <div class="col s10">
+    <div class="content">
+      <table
+      id="datatable"
+      class="table table-bordered dt-responsive nowrap"
+      style="
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+      "
+    >
+      <thead>
+        <tr class="teal darken-4 white-text">
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- <td>Hi</td>
+          <td>Hello</td>
+          <td class="btn btn-primary">
+            <a href="#" style="color: white">Link</a>
+          </td> -->
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    
     <!-- JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
@@ -103,11 +87,10 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Compiled and minified JavaScript -->
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Required datatable js -->
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
@@ -136,6 +119,15 @@
     // obj = JSON.parse(text);
     // document.getElementById("demo").innerHTML =
     // obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+    $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens,
+    }
+  ); 
+
     var config = {
       apiKey: "AIzaSyCx3ooMujC1cVIy4dou6h3XWeaothhJbPA",
       authDomain: "employment-form-6c9f3.firebaseapp.com",
