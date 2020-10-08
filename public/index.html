@@ -1,0 +1,663 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>materialize</title>
+
+</head>
+<body> 
+<div class="container">
+<form id="employement-form" action="" class="col l15 s3">
+  <h5 class="center">Non-Discrmination Policy</h5>
+  <p class="center">River Valley HealthCare is committed to the principle of equal opportunity in employment. We do not discriminate on the basis of sex, race, color, creed, national origin, age, religion, sexual orientation, gender identity, gender expression, veteran status, or disability in admission to, access to, treatment in, or employment in its programs and activities.</p>
+  <br>
+  <p>Position(s) Applied for</p> 
+  <p>
+    <label>
+      <input type="checkbox" id="responsibleperson">
+      <span>Responsible Person</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" id="cook">
+      <span>Cook</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" id="housekeeper">
+      <span>House Keeper</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" id="admin">
+      <span>Assistant Administrator</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" id="pca">
+      <span>Personal Care Assistant (PCA)</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" id="cna">
+      <span>Certified Nursing Assistant (CNA)</span>
+    </label>
+  </p>
+  <br>
+  <h5 class="center">Name</h5>
+  <div class="input-field col l5 s1">
+    <input type="text" id="firstname">
+    <label for="firstname">First Name</label>
+  </div>
+
+  <div class="input-field col l5 s1">
+    <input type="text" id="middlename">
+    <label for="middlename">Middle Name</label>
+  </div>
+       
+  <div class="input-field col l5 s1">
+    <input type="text" id="lastname">
+    <label for="lastname">Last Name</label>
+  </div>
+  <br>
+<!-- address -->
+<h5 class="center">Address</h5>
+<div class="input-field col l5 s1">
+  <input type="text" class="" id="street">
+  <label for="street">Street</label>
+</div>
+
+<div class="input-field col l5 s1">
+ <input type="text" class="" id="state">
+ <label for="state">State</label>
+</div>
+
+<div class="input-field col l5 s1">
+ <input type="text" class="" id="city">
+ <label for="city">City</label>
+</div>
+
+<div class="input-field col l5 s1">
+  <input type="number" class="" id="pin">
+  <label for="pin">Pin</label>
+</di>
+<br>
+
+ <!-- contact -->
+ <h5 class="center">Contact</h5>
+ <div class="input-field col l5 s1">
+   <input type="number" id="phonenumber">
+   <label for="phonenumber">Phonenumber</label>
+ </div>
+ <div class="input-field col l5 s1">
+  <input type="email" id="emailid">
+  <label for="emailid">E-mail Id</label>
+</div>
+<div class="input-field col l5 s1">
+  <input type="text" id="dob" class="datepicker">
+  <label for="dob">Date of Birth</label>
+</div>
+<div class="input-field col l5 s1">
+  <input type="password" id="securitynumer">
+  <label for="securitynumer">Social Seccurity Number</label>
+</div>
+<br>
+<!-- citizenship -->
+<h5 class="center">Citizenship</h5>
+<p>Are you a Citizen of America</p>
+<p>
+  <label>
+    <input type="radio" name="citizenship" id="citizenship" value="yes">
+    <span>Yes</span>
+  </label>
+</p>
+<p>
+  <label>
+   <input data-target="modal1" class="modal-trigger" type="radio" name="citizenship" id="citizenship" value="no" >
+   <span >No</span>
+  </label>
+</p>   
+<br>
+
+<!-- workpermit -->
+<h5 class="center">Workpermit</h5>
+<p>If You Are Under 18 Can You Provide Workpermit</p>
+<p>
+  <label>
+    <input type="radio" name="workpermit" id="workpermit" value="yes">
+    <span>Yes</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="workpermit" id="workpermit" value="no">
+    <span>No</span>
+  </label>
+</p>  
+<br>
+
+ <!--application  -->
+ <h5 class="center">Company</h5>
+ <p>Have You Ever Filed Application Here</p>
+<p>
+  <label>
+    <input type="radio" name="application" id="application" class="modal-trigger" data-target="modal2" value="yes">
+    <span>Yes</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="application"id="application" value="no">
+    <span>No</span>
+  </label>
+</p>  
+<br>
+<p>Have You Ever Worked For This Company</p> 
+<p>
+  <label>
+    <input type="radio" name="worked" id="companywork"class="modal-trigger" data-target="modal2" value="yes">
+    <span>Yes</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="worked"id="companywork" value="no">
+    <span>No</span>
+  </label>
+</p>  
+<br>
+
+<!-- employment desired -->
+<h5 class="center">Work Timing</h5>
+<p>Employment Desired</p> 
+<p>
+  <label>
+    <input type="radio" name="employmentdesired" id="employmentdesired" value="halftime">
+    <span>Half-TIme</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="employmentdesired"id="employmentdesired" value="fulltime">
+    <span>Full-Time</span>
+  </label>
+</p>  
+ <br>
+ <p>When are You Available To Work</p> 
+<p>
+  <label>
+    <input type="radio" name="available" id="immedietly" value="immedietly">
+    <span>Immedietly</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="available"id="nextweek" value="nextweek">
+    <span>Next Week</span>
+  </label>
+</p>  
+<p>
+  <label>
+    <input type="radio" name="available"id="aftertwoweeks" value="aftertwoweeks">
+    <span>After Two Weeks</span>
+  </label>
+</p>  
+<p>
+  <label>
+    <input type="radio" name="available"id="nextmonth" value="nextmonth">
+    <span>Next Month</span>
+  </label>
+</p>  
+ <br>
+
+ <!--  shifts available to work-->
+ <h5 class="center">Shifts Available To work </h5>
+<p>Weekdays</p>
+<p>
+  <label>
+    <input type="checkbox" name="shifts" id="timing1">
+    <span>7:00 A.M. to 3:00 P.M.</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="checkbox" name="shifts" id="timing2">
+    <span> 3:00 P.M. to 11:00 P.M.</span>
+  </label>
+</p>  
+<p>
+  <label>
+    <input type="checkbox" name="shifts" id="timing3">
+    <span> 11:00 P.M. to 7:00 P.M.</span>
+  </label>
+</p>  
+<br>
+<p>Weekends</p>
+<p>
+  <label>
+    <input type="checkbox" name="shifts" id="weekendtiming1">
+    <span>7:00 A.M. to 3:00 P.M.</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="checkbox" name="shifts" id="weekendtiming2">
+    <span> 3:00 P.M. to 11:00 P.M.</span>
+  </label>
+</p>  
+<p>
+  <label>
+    <input type="checkbox" name="shifts" id="weekendtiming3">
+    <span> 11:00 P.M. to 7:00 P.M.</span>
+  </label>
+</p>  
+<br>
+<div class="input-field col l5 s1">
+  <input type="text" class="" id="others">
+  <label for="others">Others</label>
+ </div>
+ <br>
+
+<!-- requirements -->
+<h5 class="center">Requirements </h5>
+<p>Can you Travel Locally If a Job Requires</p>
+<p>
+  <label>
+    <input type="radio" name="travel" id="travel" value="yes">
+    <span>Yes</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="travel" id="travel" value="no">
+    <span>No</span>
+  </label>
+</p>
+<br>
+<p>Do You Have a Driver's License</p>
+<p>
+  <label>
+    <input type="radio" name="driverlicense" id="driverlicense" value="yes">
+    <span>Yes</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="driverlicense" id="driverlicense" value="no">
+    <span>No</span>
+  </label>
+</p>
+<br>
+<p>Have You been convicted to felony</p>
+<p>
+  <label>
+    <input type="radio" name="felony" id="felony" value="yes" class="modal-trigger" data-target="modal4" value="yes">
+    <span>Yes</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="felony" id="felony" value="no" value="no">
+    <span>No</span>
+  </label>
+</p>
+<br>
+
+<!-- education -->
+<h5 class="center">Education</h5>
+<div class="input-field">
+<input type="text" id="typeofschool" name="typeofschool">
+<label for="typeofschool">(1)Type of School</label>
+</div>
+<div class="input-field">
+<input type="text" id="nameofschool" name="nameofschool">
+<label for="nameofschool">(1)Name of School"</label>
+</div>
+<div class="input-field">
+<input type="text" id="location" name="location">
+<label for="location">(1)location(complete mailing address)</label>
+</div>
+<div class="input-field">
+<input type="text" id="noofyearscompletd" name="noofyearscompletd">
+<label for="noofyearscompleted">(1)No.of Years Completd</label>
+</div>
+<div class="input-field">
+<input type="text" id="majordegree" name="majordegree">
+<label for="majordegree">(1)Major Degree</label>
+</div>
+<br>
+
+<!-- computer skills -->
+<h5 class="center">Computer Skills</h5>
+<div class="input-field">
+  <input type="text" id="computerskills" name="computerskills">
+  <label for="computerskills">(1)Computer Skills</label>
+  </div>
+  <br>
+
+<!-- other skills -->
+<h5 class="center">Other Skills</h5>
+<div class="input-field">
+  <input type="text" id="otherskills" name="otherskills">
+  <label for="otherskills">(1)Other Skills</label>
+  </div>
+  <br>
+
+<!-- work experience 1 -->
+<h5 class="center">Work Experience1</h5>
+<div class="input-field">
+<label for="employee">Name of the current /recent Employee</label>
+<input type="text" id="employee" name="employee">
+</div>
+
+<div class="input-field">
+<label for="address">Address</label>
+<input type="text" id="address" name="address" >
+</div>
+
+<div class="input-field">
+<label for="position">Title/Position</label>
+<input type="text" id="position" name="position" >
+</div>
+
+<div class="input-field">
+<label for="finalpay">Final Pay</label>
+<input type="text" id="finalpay" name="finalpay" >
+</div>
+
+<div class="input-field">
+<label for="supervisor">Supervisor</label>
+<input type="text" id="supervisor" name="supervisor" >
+</div>
+
+<div class="input-field">
+<label for="reasonforleaving">Reason For Leaving</label>
+<input type="text" id="reasonforleaving" name="reasonforleaving" >
+</div>
+
+<div class="input-field">
+<label for="workperformed">Work Performd</label>  
+<input type="text" id="workperformed" name="workperformed" >
+</div>
+<br>
+
+<!-- work experience2 -->
+<h5 class="center">Work Experience2</h5>
+<div class="input-field">
+<label for="employee2">Name of the current /recent Employee</label>
+<input type="text" id="employee2" name="employee2">
+</div>
+
+<div class="input-field">
+<label for="address2">Address</label>
+<input type="text" id="address2" name="address2" >
+</div>
+
+<div class="input-field">
+<label for="position2">Title/Position</label>
+<input type="text" id="position2" name="position2" >
+</div>
+
+<div class="input-field">
+<label for="finalpay2">Final Pay</label>
+<input type="text" id="finalpay2" name="finalpay2" >
+</div>
+
+<div class="input-field">
+<label for="supervisor2">Supervisor</label>
+<input type="text" id="supervisor2" name="supervisor2" >
+</div>
+
+<div class="input-field">
+<label for="reasonforleaving2">Reason For Leaving</label>
+<input type="text" id="reasonforleaving2" name="reasonforleaving2" >
+</div>
+
+<div class="input-field">
+<label for="workperformed2">Work Performd</label>  
+<input type="text" id="workperformed2" name="workperformed2" >
+</div>
+<br>
+
+<!-- work experience3 -->
+<h5 class="center">Work Experience3</h5>
+<div class="input-field">
+<label for="employee3">Name of the current /recent Employee</label>
+<input type="text" id="employee3" name="employee3">
+</div>
+
+<div class="input-field">
+<label for="address3">Address</label>
+<input type="text" id="address3" name="address3" >
+</div>
+
+<div class="input-field">
+<label for="position3">Title/Position</label>
+<input type="text" id="position3" name="position3" >
+</div>
+
+<div class="input-field">
+<label for="finalpay3">Final Pay</label>
+<input type="text" id="finalpay3" name="finalpay3" >
+</div>
+
+<div class="input-field">
+<label for="supervisor3">Supervisor</label>
+<input type="text" id="supervisor3" name="supervisor3" >
+</div>
+
+<div class="input-field">
+<label for="reasonforleaving3">Reason For Leaving</label>
+<input type="text" id="reasonforleaving3" name="reasonforleaving3" >
+</div>
+
+<div class="input-field">
+<label for="workperformed3">Work Performd</label>  
+<input type="text" id="workperformed3" name="workperformed3" >
+</div>
+<br>
+
+<!-- references -->
+<h5 class="center">References</h5>
+<div class="input-field">
+<label for="referencename">(1)Name</label>
+<input type="text" id="referencename" name="referencename">
+</div>
+
+<div class="input-field">
+<label for="referenceposition">(1)Position</label>
+<input type="text" id="referenceposition" name="referenceposition" >
+</div>
+
+<div class="input-field">
+<label for="referencecompany">(1)Company</label>
+<input type="text" id="referencecompany" name="referencecompany" >
+</div>
+
+<div class="input-field">
+<label for="referenceaddress">(1)Address</label>
+<input type="text" id="referenceaddress" name="referenceaddress" >
+</div>
+
+<div class="input-field">
+<label for="referencephone">(1)phonenumber</label>
+<input type="text" id="referencephone" name="referencephone" >
+</div>
+<br>
+
+<!-- affirmative action survey -->
+<h5 class="center">Affirmative Action Survey</h5>
+<p class="center">(Government agencies require periodic reports on the sex, ethnicity, disability, and veteran status of applicants. Submission of information about a disability is voluntary. This data is for analysis and affirmative action only.)</p>
+<p>1.Sex</p>
+<p>
+  <label>
+    <input type="radio" name="sex" id="sex">
+    <span>Male</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="sex" id="sex">
+    <span>Female</span>
+  </label>
+</p>
+<br>
+<p>2.Race</p>
+<p>
+  <label>
+    <input type="radio" name="race" id="race">
+    <span>White</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="race" id="race">
+    <span>Black</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="race" id="race">
+    <span>Hispanic</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="race" id="race">
+    <span>American Indian/Alaskan Native</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="race" id="race">
+    <span>Asian Pacific Islander</span>
+  </label>
+</p>
+<br>
+<p>3.Disabled</p>
+<p>
+  <label>
+    <input type="radio" name="disabled" id="disabled">
+    <span>Disabled</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="disabled" id="disabled">
+    <span>Vietnam Era Veteran</span>
+  </label>
+</p>
+<p>
+  <label>
+    <input type="radio" name="disabled" id="disabled">
+    <span>Disabled Veteran</span>
+  </label>
+</p>
+<br>
+<button class="btn yellow darken-2">Submit</button>
+</form>
+</div>
+<br>
+
+<!-- signature -->
+
+
+
+
+
+
+
+<!-- /signature -->
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <p>Are You Authorized To Work in America</p>
+    <p>
+      <label>
+        <input type="radio" name="authorization" id="authorization" class="modal-close" value="yes">
+        <span>Yes</span>
+      </label>
+    </p>
+    <p>
+      <label>
+       <input  type="radio" name="authorization" id="authorization" value="no">
+       <span >No</span>
+      </label>
+    </p>   
+    
+  </div>
+  <div class="modal-footer"> 
+  </div>
+</div>
+
+<!-- modal2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <div class="input-field">
+      <input type="month">
+      <label for="modal">Month</label>
+    </div>
+    <div class="input-field">
+      <input type="year">
+      <label for="modal">Year</label>
+    </div>
+  </div>
+  <div class="modal-footer"> 
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div>
+
+<!-- modal3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <div class="input-field">
+      <input type="month">
+      <label for="modal">Month</label>
+    </div>
+    <div class="input-field">
+      <input type="year">
+      <label for="modal">Year</label>
+    </div>
+  </div>
+  <div class="modal-footer"> 
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div>
+
+<!-- modal4 -->
+<div id="modal4" class="modal">
+  <div class="modal-content">
+   <div class="input-field">
+     <input type="text" name="explain" id="explain">
+     <label for="explain">Explain</label>
+   </div>
+  </div>
+  <div class="modal-footer"> 
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('.datepicker').datepicker({
+        });
+        $('.modal').modal();
+
+    });
+    
+</script>
+</body>
+</html>
