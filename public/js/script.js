@@ -32,6 +32,8 @@ employementForm.addEventListener("submit", (e) => {
   var worked = radioworked();
   var employmentdesired = radioemploymentdesired();
   var available = radioavailable();
+  //   var shifts =
+  var travel = radiotravel();
   console.log(
     postion,
     firstName,
@@ -81,6 +83,10 @@ employementForm.addEventListener("submit", (e) => {
     var available = document.querySelector("input[name=available]:checked")
       .value;
     return available;
+  }
+  function radiotravel() {
+    var travel = document.querySelector("input[name=travel]:checked").value;
+    return travel;
   }
 
   function checkPos() {

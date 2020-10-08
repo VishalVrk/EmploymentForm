@@ -9,21 +9,6 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
-  // res.sendFile("index.html", { root: __dirname });
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
-router.get("/dashboard", (req, res) => {
-  // res.sendFile("index.html", { root: __dirname });
-  res.sendFile(path.join(__dirname, "public", "dashboard.html"));
-});
-
-router.post("/auth", (req, res) => {
-  console.log("success");
-  // var firstName = req.body.firstName;
-  var firstName = req.body;
-  console.log(req.body);
-});
 router.post("/signup", (req, res) => {
   const { name, email, password } = req.body;
   if (!email || !password || !name) {
